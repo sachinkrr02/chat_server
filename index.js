@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
-    origin: 'https://chatserver-production-decf.up.railway.app/',
+    origin: '*',
     methods : ["GET", "POST"]
   },
 });
