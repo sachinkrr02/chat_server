@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
-    origin: 'https://6de9-103-208-68-10.ngrok-free.app',
+    origin: 'https://chatserver-production-decf.up.railway.app/',
     methods : ["GET", "POST"]
   },
 });
