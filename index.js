@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // Initialize Socket.IO with CORS config
 const io = socketIO(server, {
   cors: {
-    origin: '*', // Allow all origins (for development only; specify domain for production)
+    origin: ['https://chat-server-656z.onrender.com', '*'],  // Allow all origins (for development only; specify domain for production)
     methods: ['GET', 'POST'],
   },
 });
